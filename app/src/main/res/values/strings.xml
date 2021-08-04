@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MySejahtera</string>
+    <string name="my_sejahtera">MySejahtera</string>
+    <string name="get_started">Get Started</string>
+    <string name="sign_in">Sign In</string>
+</resources>
