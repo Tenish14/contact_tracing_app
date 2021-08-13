@@ -54,48 +54,4 @@ public class BottomNavigation extends AppCompatActivity {
             return true;
         }
     };
-//    private BottomNavigationView.OnNavigationItemSelectedListener bottomNavMethod = new
-//            BottomNavigationView.OnNavigationItemSelectedListener() {
-//                @Override
-//                public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-//
-//                    int id = menuItem.getItemId();
-//
-//                    if (id == R.id.nav_home){
-//                        DashboardFragment fragment = new DashboardFragment();
-//                        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-//                        fragmentTransaction.replace(R.id.container,fragment);
-//                        fragmentTransaction.commit();
-//                    }
-//
-//                    if (id == R.id.nav_notification){
-//                        DashboardFragment fragment = new DashboardFragment();
-//                        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-//                        fragmentTransaction.replace(R.id.container,fragment);
-//                        fragmentTransaction.commit();
-//                    }
-//
-//                    if (id == R.id.nav_scan_qr){
-//                        DashboardFragment fragment = new DashboardFragment();
-//                        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-//                        fragmentTransaction.replace(R.id.container,fragment);
-//                        fragmentTransaction.commit();
-//                    }
-//
-//                    if (id == R.id.nav_statistic){
-//                        DashboardFragment fragment = new DashboardFragment();
-//                        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-//                        fragmentTransaction.replace(R.id.container,fragment);
-//                        fragmentTransaction.commit();
-//                    }
-//
-//                    if (id == R.id.nav_profile){
-//                        DashboardFragment fragment = new DashboardFragment();
-//                        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-//                        fragmentTransaction.replace(R.id.container,fragment);
-//                        fragmentTransaction.commit();
-//                    }
-//                    return true;
-//                }
-//            };
 }
