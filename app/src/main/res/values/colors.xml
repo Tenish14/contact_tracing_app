@@ -8,4 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFF</color>
     <color name="theme_color">#3E6FFF</color>
+    <color name="update_profile">#7741FF</color>
+    <color name="vaccine_education">#3BB64C</color>
+    <color name="emergency_dial">#B20000</color>
 </resources>
