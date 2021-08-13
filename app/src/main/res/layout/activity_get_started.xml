@@ -5,6 +5,7 @@
     android:id="@+id/logo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/border_test"
     tools:context=".GetStarted">
 
     <androidx.constraintlayout.widget.Guideline
@@ -26,7 +27,6 @@
         android:layout_width="186dp"
         android:layout_height="145dp"
         android:layout_marginTop="75dp"
-        android:contentDescription="app_logo"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/guideline_left"
         app:layout_constraintTop_toTopOf="parent"
@@ -36,14 +36,13 @@
         android:id="@+id/get_started"
         android:layout_width="367dp"
         android:layout_height="54dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="328dp"
         android:paddingStart="50sp"
         android:paddingEnd="50sp"
         android:text="@string/get_started"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:onClick="bottomNavTest"
         app:backgroundTint="@color/theme_color"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/guideline_left"
@@ -51,22 +50,21 @@
 
     <Button
         android:id="@+id/sign_in"
-        android:layout_width="363dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginBottom="64dp"
-        android:background="@drawable/border_test"
+        android:layout_width="367dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="416dp"
         android:paddingStart="50sp"
         android:paddingEnd="50sp"
         android:text="@string/sign_in"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="16sp"
+        android:background="@drawable/border_test"
+        app:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline_left"
-        app:layout_constraintTop_toBottomOf="@+id/get_started"
-        app:layout_constraintVertical_bias="0.833" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

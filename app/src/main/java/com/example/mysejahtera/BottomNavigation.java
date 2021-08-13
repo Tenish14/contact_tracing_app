@@ -1,17 +1,16 @@
 package com.example.mysejahtera;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
-import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarView;
+
 
 public class BottomNavigation extends AppCompatActivity {
 
@@ -26,7 +25,7 @@ public class BottomNavigation extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.container, new DashboardFragment()).commit();
     }
 
-    private BottomNavigationView.OnNavigationItemSelectedListener navListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
+    private final BottomNavigationView.OnNavigationItemSelectedListener navListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             Fragment selectedFragment = null;
@@ -36,19 +35,20 @@ public class BottomNavigation extends AppCompatActivity {
                     selectedFragment = new DashboardFragment();
                     break;
                 case R.id.nav_notification:
-                    selectedFragment = new DashboardFragment();
+                    selectedFragment = new NotificationFragment();
                     break;
                 case R.id.nav_profile:
-                    selectedFragment = new DashboardFragment();
+                    selectedFragment = new ProfileFragment();
                     break;
                 case R.id.nav_scan_qr:
-                    selectedFragment = new DashboardFragment();
+                    selectedFragment = new ScanQrFragment();
                     break;
                 case R.id.nav_statistic:
-                    selectedFragment = new DashboardFragment();
+                    selectedFragment = new StatisticsFragment();
                     break;
             }
 
+            assert selectedFragment != null;
             getSupportFragmentManager().beginTransaction().replace(R.id.container, selectedFragment).commit();
 
             return true;
