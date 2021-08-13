@@ -13,9 +13,4 @@ public class GetStarted extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_started);
     }
-
-    public void bottomNavTest(View view) {
-        Intent intent = new Intent(GetStarted.this, BottomNavigation.class);
-        startActivity(intent);
-    }
 }
