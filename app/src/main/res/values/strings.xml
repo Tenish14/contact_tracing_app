@@ -3,4 +3,11 @@
     <string name="my_sejahtera">MySejahtera</string>
     <string name="get_started">Get Started</string>
     <string name="sign_in">Sign In</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="notification">Notification</string>
+    <string name="scan_qr">Scan Qr</string>
+    <string name="statistic">Statistic</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">csacsacas</string>
 </resources>
