@@ -13,4 +13,14 @@ public class GetStarted extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_started);
     }
+
+    public void navigateSignInPage(View view) {
+        Intent intent = new Intent(GetStarted.this, SignIn.class);
+        startActivity(intent);
+    }
+
+    public void navigateRegisterPage(View view) {
+        Intent intent = new Intent(GetStarted.this, Register.class);
+        startActivity(intent);
+    }
 }
