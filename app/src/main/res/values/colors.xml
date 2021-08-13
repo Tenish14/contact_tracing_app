@@ -7,6 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFF</color>
+    <color name="light_grey">#E8EBEC</color>
     <color name="theme_color">#3E6FFF</color>
     <color name="update_profile">#7741FF</color>
     <color name="vaccine_education">#3BB64C</color>

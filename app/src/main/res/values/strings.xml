@@ -21,5 +21,9 @@
     <string name="update_profile">Update Profile</string>
     <string name="vaccine_education">Vaccine Education</string>
     <string name="emergency_quick_dial">Emergency Quick Dial</string>
+    <string name="welcome_back">Welcome Back,</string>
+    <string name="tenish">Tenish</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="register">Register</string>
 
 </resources>

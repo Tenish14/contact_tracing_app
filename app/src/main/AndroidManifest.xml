@@ -10,6 +10,8 @@
         android:theme="@style/Theme.MySejahtera">
         <activity android:name=".GetStarted" />
         <activity android:name=".BottomNavigation" />
+        <activity android:name=".SignIn" />
+        <activity android:name=".Register"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
