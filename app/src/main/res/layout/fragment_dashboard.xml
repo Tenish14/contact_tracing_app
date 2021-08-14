@@ -327,7 +327,7 @@
         android:layout_width="85dp"
         android:layout_height="76dp"
         android:layout_marginTop="44dp"
-        android:background="@drawable/bprder_radius_emegency"
+        android:background="@drawable/border_radius_emegency"
         android:src="@drawable/quick_dial"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.611"
