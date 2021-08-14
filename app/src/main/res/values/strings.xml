@@ -4,11 +4,11 @@
     <string name="get_started">Get Started</string>
     <string name="sign_in">Sign In</string>
     <string name="dashboard">Dashboard</string>
-    <string name="notification">Notification</string>
+    <string name="notification">Notification</string>`
     <string name="scan_qr">Scan Qr</string>
     <string name="statistic">Statistic</string>
     <string name="profile">Profile</string>
-    <string name="hello_blank_fragment">csacsacas</string>
+
     <string name="username">Hi Asher Chan</string>
     <string name="cases_descrip">There are 25 Covid cases reported near you within 1km</string>
     <string name="new_cases">4,500</string>
@@ -25,5 +25,24 @@
     <string name="tenish">Tenish</string>
     <string name="forgot_password">Forgot password?</string>
     <string name="register">Register</string>
+    <string name="statistic_back">statistic_back</string>
+    <string name="statistics">Statistics</string>
+    <string name="today">Today</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="_5244">5244</string>
+    <string name="recovered">Recovered</string>
+    <string name="_6372">6372</string>
+    <string name="deaths">Deaths</string>
+    <string name="_83">83</string>
+    <string name="active">Active</string>
+    <string name="_60">60</string>
+    <string name="total_confirmed_cases">Total Confirmed Cases</string>
+    <string name="_711_006">711, 006</string>
+    <string name="total_recovered_case">Total Recovered Case</string>
+    <string name="_650_969">650,969</string>
+    <string name="total_active_cases">Total Active Cases</string>
+    <string name="_61_162">61,162</string>
+    <string name="total_deaths_cases">Total Deaths Cases</string>
+    <string name="_4_721">4,721</string>
 
 </resources>
