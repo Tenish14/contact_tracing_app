@@ -8,6 +8,7 @@
     <string name="scan_qr">Scan Qr</string>
     <string name="statistic">Statistic</string>
     <string name="profile">Profile</string>
+    <string name="hello_blank_fragment">Hello</string>
 
     <string name="username">Hi Asher Chan</string>
     <string name="cases_descrip">There are 25 Covid cases reported near you within 1km</string>
@@ -44,5 +45,8 @@
     <string name="_61_162">61,162</string>
     <string name="total_deaths_cases">Total Deaths Cases</string>
     <string name="_4_721">4,721</string>
+    <string name="notifications_back">notifications back</string>
+    <string name="notifications">Notifications</string>
+    <string name="expand_icon">expand_icon</string>
 
 </resources>
