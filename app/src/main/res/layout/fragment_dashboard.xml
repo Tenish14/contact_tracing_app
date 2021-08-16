@@ -300,9 +300,10 @@
         android:id="@+id/vaccine_education"
         android:layout_width="85dp"
         android:layout_height="76dp"
-        android:layout_marginStart="45dp"
+        android:layout_marginStart="44dp"
         android:layout_marginTop="44dp"
         android:background="@drawable/border_radius_vacine_education"
+        android:focusable="true"
         android:src="@drawable/vaccine_img"
         app:layout_constraintStart_toEndOf="@+id/update_profile"
         app:layout_constraintTop_toBottomOf="@+id/vaccine_bckgrnd" />

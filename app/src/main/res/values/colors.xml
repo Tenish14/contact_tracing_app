@@ -12,4 +12,6 @@
     <color name="update_profile">#7741FF</color>
     <color name="vaccine_education">#3BB64C</color>
     <color name="emergency_dial">#B20000</color>
+    <color name="vaccine_education_background">#46BA5D</color>
+
 </resources>
