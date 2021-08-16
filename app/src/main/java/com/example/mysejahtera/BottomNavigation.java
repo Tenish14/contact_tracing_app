@@ -35,7 +35,7 @@ public class BottomNavigation extends AppCompatActivity {
                     selectedFragment = new DashboardFragment();
                     break;
                 case R.id.nav_notification:
-                    selectedFragment = new NotificationFragment();
+                    selectedFragment = new NotificationsFragment();
                     break;
                 case R.id.nav_profile:
                     selectedFragment = new ProfileFragment();
