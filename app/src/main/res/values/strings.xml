@@ -51,5 +51,25 @@
     <string name="check_in_history">Check-In History</string>
     <string name="vaccine_title">Vaccine</string>
     <string name="sign_out">Sign Out</string>
+    <string name="details">Details</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="name">Name</string>
+    <string name="john_cena">John Cena</string>
+    <string name="field_name">Name:</string>
+    <string name="nric">NRIC:</string>
+    <string name="_010203_07_0321">010203-07-0321</string>
+    <string name="phone_number">Phone Number:</string>
+    <string name="_60_12_345_6789">+60 12-345 6789</string>
+    <string name="address">Address</string>
+    <string name="state">State:</string>
+    <string name="penang">Penang</string>
+    <string name="city">City:</string>
+    <string name="georgetown">Georgetown</string>
+    <string name="post_code">Post Code:</string>
+    <string name="_10050">10050</string>
+    <string name="line_1">Line 1:</string>
+    <string name="jalan_road">Jalan Road</string>
+    <string name="line_2">Line 2:</string>
+    <string name="_5_mansion_6b">5, Mansion 6B</string>
 
 </resources>
