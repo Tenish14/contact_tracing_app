@@ -71,5 +71,13 @@
     <string name="jalan_road">Jalan Road</string>
     <string name="line_2">Line 2:</string>
     <string name="_5_mansion_6b">5, Mansion 6B</string>
+    <string name="malaysia_s_fight_against_covid_19">Malaysia\'s fight against Covid-19</string>
+    <string name="registred_amount">12,117,091</string>
+    <string name="vaccinated_amount">1,944,458</string>
+    <string name="registered">registered</string>
+    <string name="vaccinated">vaccinated</string>
+    <string name="register_now">Register now</string>
+    <string name="what_you_need_to_know">What you need to know</string>
+    <string name="learn_how_vaccines_work_amp_how_it_can_save_your_life"><![CDATA[Learn how vaccines work & how it can save your life]]></string>
 
 </resources>
