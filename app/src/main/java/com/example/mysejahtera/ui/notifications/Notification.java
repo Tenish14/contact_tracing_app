@@ -1,4 +1,4 @@
-package com.example.mysejahtera;
+package com.example.mysejahtera.ui.notifications;
 
 public class Notification {
 
