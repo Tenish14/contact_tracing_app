@@ -1,12 +1,17 @@
 package com.example.mysejahtera;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 
+import androidx.core.graphics.drawable.RoundedBitmapDrawable;
+import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -58,7 +63,22 @@ public class ProfileFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_profile, container, false);
+        ImageView profilePic = view.findViewById(R.id.profile_pic);
+
+        // Not dynamic right now, TODO: handle dynamic images
+
+
+        // To set a circular radius around image
+        //get bitmap of the image
+        Bitmap imageBitmap= BitmapFactory.decodeResource(getResources(),  R.drawable.handsome_boi);
+        RoundedBitmapDrawable roundedBitmapDrawable= RoundedBitmapDrawableFactory.create(getResources(), imageBitmap);
+
+        //setting radius
+        roundedBitmapDrawable.setCircular(true);
+        roundedBitmapDrawable.setAntiAlias(true);
+        profilePic.setImageDrawable(roundedBitmapDrawable);
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        return view;
     }
 }
