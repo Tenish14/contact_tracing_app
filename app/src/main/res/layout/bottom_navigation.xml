@@ -14,6 +14,8 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:itemTextColor="@drawable/tab_color"
+        app:itemIconTint="@drawable/tab_color"
         android:id="@+id/bottomNav"
         android:layout_alignParentBottom="true"
         android:background="@color/white"

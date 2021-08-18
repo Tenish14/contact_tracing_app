@@ -48,5 +48,8 @@
     <string name="expand_icon">expand_icon</string>
     <string name="profile">Profile</string>
     <string name="hello">Hello,</string>
+    <string name="check_in_history">Check-In History</string>
+    <string name="vaccine_title">Vaccine</string>
+    <string name="sign_out">Sign Out</string>
 
 </resources>
