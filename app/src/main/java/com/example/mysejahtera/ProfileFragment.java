@@ -1,9 +1,11 @@
 package com.example.mysejahtera;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.core.graphics.drawable.RoundedBitmapDrawable;
 import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 import androidx.fragment.app.Fragment;
@@ -11,7 +13,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
+
+import com.example.mysejahtera.ui.history.HistoryFragment;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -60,14 +65,33 @@ public class ProfileFragment extends Fragment {
         }
     }
 
+    public void onClickHistory(View view) {
+        getParentFragmentManager().beginTransaction().replace(R.id.container, new HistoryFragment()).commit();
+    }
+
+    public boolean onClickProfile(View view) {
+        getParentFragmentManager().beginTransaction().replace(R.id.container, new HistoryFragment()).commit();
+        return true;
+    }
+
+    public boolean onClickVaccine(View view) {
+        getParentFragmentManager().beginTransaction().replace(R.id.container, new HistoryFragment()).commit();
+        return true;
+    }
+
+    public boolean onClickSignOut(View view) {
+        getParentFragmentManager().beginTransaction().replace(R.id.container, new HistoryFragment()).commit();
+        return true;
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
         ImageView profilePic = view.findViewById(R.id.profile_pic);
 
-        // Not dynamic right now, TODO: handle dynamic images
 
+        // Not dynamic right now, TODO: handle dynamic images
 
         // To set a circular radius around image
         //get bitmap of the image
@@ -78,7 +102,32 @@ public class ProfileFragment extends Fragment {
         roundedBitmapDrawable.setCircular(true);
         roundedBitmapDrawable.setAntiAlias(true);
         profilePic.setImageDrawable(roundedBitmapDrawable);
+
+        CardView historyCard = view.findViewById(R.id.history_card);
+        CardView profileCard = view.findViewById(R.id.profile_card);
+        CardView vaccineCard = view.findViewById(R.id.vaccine_card);
+        CardView signOutCard = view.findViewById(R.id.sign_out_card);
+
+        historyCard.setOnClickListener(v -> {
+            getParentFragmentManager().beginTransaction().replace(R.id.container, new HistoryFragment()).commit();
+        });
+
+        profileCard.setOnClickListener(v -> {
+            getParentFragmentManager().beginTransaction().replace(R.id.container, new DetailsFragment()).commit();
+        });
+
+        vaccineCard.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), VaccineEducation.class);
+            startActivity(intent);
+        });
+
+        signOutCard.setOnClickListener(v -> {
+            Intent intent = new Intent(getActivity(), SignIn.class);
+            startActivity(intent);
+        });
+
         // Inflate the layout for this fragment
         return view;
     }
+
 }
