@@ -13,7 +13,6 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.mysejahtera.ui.history.HistoryFragment;
@@ -65,25 +64,6 @@ public class ProfileFragment extends Fragment {
         }
     }
 
-    public void onClickHistory(View view) {
-        getParentFragmentManager().beginTransaction().replace(R.id.container, new HistoryFragment()).commit();
-    }
-
-    public boolean onClickProfile(View view) {
-        getParentFragmentManager().beginTransaction().replace(R.id.container, new HistoryFragment()).commit();
-        return true;
-    }
-
-    public boolean onClickVaccine(View view) {
-        getParentFragmentManager().beginTransaction().replace(R.id.container, new HistoryFragment()).commit();
-        return true;
-    }
-
-    public boolean onClickSignOut(View view) {
-        getParentFragmentManager().beginTransaction().replace(R.id.container, new HistoryFragment()).commit();
-        return true;
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -117,8 +97,7 @@ public class ProfileFragment extends Fragment {
         });
 
         vaccineCard.setOnClickListener(v -> {
-            Intent intent = new Intent(getActivity(), VaccineEducation.class);
-            startActivity(intent);
+            getParentFragmentManager().beginTransaction().replace(R.id.container, new VaccineStats()).commit();
         });
 
         signOutCard.setOnClickListener(v -> {

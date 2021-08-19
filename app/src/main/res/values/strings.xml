@@ -79,5 +79,19 @@
     <string name="register_now">Register now</string>
     <string name="what_you_need_to_know">What you need to know</string>
     <string name="learn_how_vaccines_work_amp_how_it_can_save_your_life"><![CDATA[Learn how vaccines work & how it can save your life]]></string>
+    <string name="scan">Scan</string>
+    <string name="place_the_qr_code_inside_the_area">Place the QR code inside the area</string>
+    <string name="scanning_will_start_automatically">Scanning will start automatically</string>
+    <string name="scan_qr_button_text">Scan QR</string>
+    <string name="press_button_to_scan_qr">Press button to scan QR</string>
+    <string name="asher_chan">Asher Chan</string>
+    <string name="vaccine_title_page">Vaccine</string>
+    <string name="vaccination_details">Vaccination Details</string>
+    <string name="_24_05_2021">24/05/2021</string>
+    <string name="setia_spice_level_1">Setia Spice, Level 1</string>
+    <string name="registered_text">Registered</string>
+    <string name="approved_text">Approved</string>
+    <string name="_1st_dose_complete">1st Dose Complete</string>
+    <string name="_2nd_dose_complete">2nd Dose Complete</string>
 
 </resources>
