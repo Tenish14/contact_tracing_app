@@ -58,17 +58,16 @@
       android:id="@+id/button"
       android:layout_width="310dp"
       android:layout_height="50sp"
+      android:layout_marginTop="16dp"
       android:background="@drawable/button"
+      android:onClick="navigateDashboard"
       android:text="@string/register"
       android:textColor="@color/white"
       android:textSize="16sp"
-      android:onClick="navigateDashboard"
-      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.504"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/editTextTextConfirmPassword"
-      app:layout_constraintVertical_bias="0.16" />
+      app:layout_constraintTop_toBottomOf="@+id/editTextTextConfirmPassword" />
 
   <ImageView
       android:id="@+id/imageView"
@@ -80,5 +79,20 @@
       app:layout_constraintHorizontal_bias="0.497"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/redirect_login"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:onClick="navigateSignInPage"
+      android:textAlignment="center"
+      android:textColor="@color/black"
+      android:textSize="16sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/button"
+      app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
