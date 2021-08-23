@@ -4,7 +4,7 @@
     <string name="get_started">Get Started</string>
     <string name="sign_in">Sign In</string>
     <string name="dashboard">Dashboard</string>
-    <string name="notification">Notification</string>`
+    <string name="faq">FAQ</string>`
     <string name="scan_qr">Scan Qr</string>
     <string name="statistic">Statistic</string>
     <string name="hello_blank_fragment">Hello</string>
@@ -44,7 +44,6 @@
     <string name="total_deaths_cases">Total Deaths Cases</string>
     <string name="_4_721">4,721</string>
     <string name="notifications_back">notifications back</string>
-    <string name="notifications">Notifications</string>
     <string name="expand_icon">expand_icon</string>
     <string name="profile">Profile</string>
     <string name="hello">Hello,</string>
@@ -93,5 +92,14 @@
     <string name="approved_text">Approved</string>
     <string name="_1st_dose_complete">1st Dose Complete</string>
     <string name="_2nd_dose_complete">2nd Dose Complete</string>
+    <string name="title_activity_emergency">EmergencyActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 </resources>

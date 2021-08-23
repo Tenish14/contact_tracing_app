@@ -1,6 +1,7 @@
 package com.example.mysejahtera;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,13 +11,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
+import com.example.mysejahtera.ui.history.HistoryFragment;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link DashboardFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
 public class DashboardFragment extends Fragment {
-    ImageButton vaccine_education;
+    ImageButton emergencyContact;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -61,6 +64,9 @@ public class DashboardFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        ImageButton vaccine_education;
+        ImageButton update_profile ;
         // Inflate the layout for this fragment
 
         View view = inflater.inflate(R.layout.fragment_dashboard, container, false);
@@ -69,6 +75,21 @@ public class DashboardFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(), VaccineEducation.class));
+            }
+        });
+
+        update_profile = (ImageButton)view.findViewById(R.id.update_profile);
+        update_profile.setOnClickListener(v -> {
+            getParentFragmentManager().beginTransaction().replace(R.id.container, new ProfileFragment()).commit();
+        });
+
+        ImageButton emergency_contact = (ImageButton)view.findViewById(R.id.quick_dial_img);
+        emergency_contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_CALL);
+                intent.setData(Uri.parse("tel:999"));
+                startActivity(intent);
             }
         });
 

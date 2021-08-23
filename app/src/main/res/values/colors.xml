@@ -14,5 +14,6 @@
     <color name="vaccine_education">#3BB64C</color>
     <color name="emergency_dial">#B20000</color>
     <color name="vaccine_education_background">#46BA5D</color>
+    <color name="emergency_appbar">#ff4c4c</color>
 
 </resources>

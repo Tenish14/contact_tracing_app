@@ -10,7 +10,6 @@
     app:contentInsetLeft="0dp"
     app:contentInsetRight="0dp"
     app:contentInsetStart="0dp"
-
     tools:context=".VaccineEducation">
 
     <com.google.android.material.appbar.AppBarLayout
