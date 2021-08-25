@@ -18,4 +18,9 @@ public class SignIn extends AppCompatActivity {
         Intent intent = new Intent(SignIn.this, BottomNavigation.class);
         startActivity(intent);
     }
+
+    public void navigateForgetPassword(View view) {
+        Intent intent = new Intent(SignIn.this, ForgetPasswordActivity.class);
+        startActivity(intent);
+    }
 }
