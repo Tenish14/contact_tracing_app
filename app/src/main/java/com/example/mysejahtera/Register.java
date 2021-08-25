@@ -19,6 +19,7 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
+        //navigate to login page text css
         TextView redirect_login = findViewById(R.id.redirect_login);
 
         String text = "Have Account? Log in here";
