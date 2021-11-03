@@ -98,7 +98,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/john_cena"
+                android:text="-"
                 android:textColor="@color/dark_grey"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -124,7 +124,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/_010203_07_0321"
+                android:text="-"
                 android:textColor="@color/dark_grey"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -150,7 +150,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/_60_12_345_6789"
+                android:text="-"
                 android:textColor="@color/dark_grey"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -158,6 +158,7 @@
 
     <LinearLayout
         android:layout_width="0dp"
+        android:visibility="gone"
         android:background="@drawable/border_radius"
         android:padding="20dp"
         android:layout_height="wrap_content"

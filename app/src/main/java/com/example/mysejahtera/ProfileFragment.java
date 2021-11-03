@@ -1,6 +1,8 @@
 package com.example.mysejahtera;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -14,6 +16,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.mysejahtera.ui.history.HistoryFragment;
 
@@ -23,6 +26,10 @@ import com.example.mysejahtera.ui.history.HistoryFragment;
  * create an instance of this fragment.
  */
 public class ProfileFragment extends Fragment {
+
+    SharedPreferences sp;
+    TextView nameView;
+    String name;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -104,6 +111,11 @@ public class ProfileFragment extends Fragment {
             Intent intent = new Intent(getActivity(), SignIn.class);
             startActivity(intent);
         });
+
+        nameView = view.findViewById(R.id.name);
+        sp = getActivity().getSharedPreferences("userPrefs", Context.MODE_PRIVATE);
+        name = sp.getString("name", "");
+        nameView.setText(name.isEmpty() ? "-" : name);
 
         // Inflate the layout for this fragment
         return view;

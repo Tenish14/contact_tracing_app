@@ -7,7 +7,7 @@
     tools:context=".Register">
 
   <EditText
-      android:id="@+id/editTextTextPersonName3"
+      android:id="@+id/phoneNumber"
       android:layout_width="310dp"
       android:layout_height="50sp"
       android:layout_marginTop="292dp"
@@ -23,7 +23,23 @@
       app:layout_constraintTop_toTopOf="parent" />
 
   <EditText
-      android:id="@+id/editTextTextPassword"
+      android:id="@+id/name"
+      android:layout_width="310dp"
+      android:layout_height="50sp"
+      android:layout_marginTop="8dp"
+      android:background='@drawable/input_field'
+      android:ems="10"
+      android:hint="Name"
+      android:inputType="text"
+      android:textColorHint="@color/black"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.504"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/phoneNumber" />
+
+  <EditText
+      android:id="@+id/password"
       android:layout_width="310dp"
       android:layout_height="50sp"
       android:layout_marginTop="8dp"
@@ -36,10 +52,26 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.504"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+      app:layout_constraintTop_toBottomOf="@+id/name" />
 
   <EditText
-      android:id="@+id/editTextTextConfirmPassword"
+      android:id="@+id/nric"
+      android:layout_width="310dp"
+      android:layout_height="50sp"
+      android:layout_marginTop="8dp"
+      android:background='@drawable/input_field'
+      android:ems="10"
+      android:hint="NRIC"
+      android:inputType="text"
+      android:textColorHint="@color/black"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.504"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/confirmPassword" />
+
+  <EditText
+      android:id="@+id/confirmPassword"
       android:layout_width="310dp"
       android:layout_height="50sp"
       android:layout_marginTop="8dp"
@@ -52,7 +84,7 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.504"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+      app:layout_constraintTop_toBottomOf="@+id/password" />
 
   <Button
       android:id="@+id/button"
@@ -67,7 +99,7 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.504"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/editTextTextConfirmPassword" />
+      app:layout_constraintTop_toBottomOf="@+id/nric" />
 
   <ImageView
       android:id="@+id/imageView"
@@ -85,7 +117,6 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginTop="16dp"
-      android:onClick="navigateSignInPage"
       android:textAlignment="center"
       android:textColor="@color/black"
       android:textSize="16sp"

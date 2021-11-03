@@ -1,6 +1,8 @@
 package com.example.mysejahtera;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -10,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.example.mysejahtera.ui.history.HistoryFragment;
 
@@ -20,6 +23,9 @@ import com.example.mysejahtera.ui.history.HistoryFragment;
  */
 public class DashboardFragment extends Fragment {
     ImageButton emergencyContact;
+    SharedPreferences sp;
+    TextView nameView;
+    String name;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -92,6 +98,11 @@ public class DashboardFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        nameView = view.findViewById(R.id.username);
+        sp = getActivity().getSharedPreferences("userPrefs", Context.MODE_PRIVATE);
+        name = sp.getString("name", "");
+        nameView.setText(name.isEmpty() ? "-" : name);
 
         return view;
     }

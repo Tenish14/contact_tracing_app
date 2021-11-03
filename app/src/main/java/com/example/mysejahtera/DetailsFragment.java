@@ -1,5 +1,7 @@
 package com.example.mysejahtera;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -24,6 +27,10 @@ public class DetailsFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    SharedPreferences sp;
+    TextView nameView, nricView, phoneNumberView;
+    String name, phoneNumber, nric;
 
     public DetailsFragment() {
         // Required empty public constructor
@@ -66,6 +73,21 @@ public class DetailsFragment extends Fragment {
         returnArrow.setOnClickListener(v -> {
             getParentFragmentManager().beginTransaction().replace(R.id.container, new ProfileFragment()).commit();
         });
+
+        nameView = view.findViewById(R.id.nameValue);
+        nricView = view.findViewById(R.id.icValue);
+        phoneNumberView = view.findViewById(R.id.phoneNumValue);
+
+        sp = getActivity().getSharedPreferences("userPrefs", Context.MODE_PRIVATE);
+
+        name = sp.getString("name", "");
+        nric = sp.getString("nric", "");
+        phoneNumber = sp.getString("phoneNumber", "");
+
+        nameView.setText(name.isEmpty() ? "-" : name);
+        nricView.setText(nric.isEmpty() ? "-" : nric);
+        phoneNumberView.setText(phoneNumber.isEmpty() ? "-" : phoneNumber);
+
         return view;
     }
 }
