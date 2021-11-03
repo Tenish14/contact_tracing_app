@@ -62,7 +62,7 @@
             android:layout_height="120dp"
             android:layout_weight="1"
             android:contentDescription="@string/tenish"
-            android:src="@drawable/handsome_boi" />
+            android:src="@drawable/empty_pic" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"

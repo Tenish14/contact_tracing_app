@@ -82,7 +82,7 @@ public class ProfileFragment extends Fragment {
 
         // To set a circular radius around image
         //get bitmap of the image
-        Bitmap imageBitmap= BitmapFactory.decodeResource(getResources(),  R.drawable.handsome_boi);
+        Bitmap imageBitmap= BitmapFactory.decodeResource(getResources(),  R.drawable.empty_pic);
         RoundedBitmapDrawable roundedBitmapDrawable= RoundedBitmapDrawableFactory.create(getResources(), imageBitmap);
 
         //setting radius
